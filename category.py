@@ -10,11 +10,13 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 
 def category_prediction(post):
-    train_csv = pd.read_csv(r'C:\Users\user\Desktop\RP\Dataset\py files\all_topic.csv') # path to file
+    # train_csv = pd.read_csv(r'C:\Users\user\Desktop\RP\Dataset\py files\all_topic.csv') # path to file
+    train_csv = pd.read_csv(r'.\all_topic.csv') # path to file
     train_csv_new=train_csv.dropna()
     train_X = train_csv_new['Processed_post']   
     train_y = train_csv_new['category']
-    test_csv = pd.read_csv(r'C:\Users\user\Desktop\RP\PP1\all_topic_test.csv') # path to file
+    # test_csv = pd.read_csv(r'C:\Users\user\Desktop\RP\PP1\all_topic_test.csv') # path to file
+    test_csv = pd.read_csv(r'.\all_topic_test.csv') 
     #remove the NaN object
     test_csv_new =test_csv.dropna()
     test_X = test_csv_new['Processed_post']

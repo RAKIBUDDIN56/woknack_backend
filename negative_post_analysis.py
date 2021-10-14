@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 
 def nagative_post_analysis(post):
     #Loading the dataset
-    df = pd.read_csv(r'C:\Users\user\Desktop\RP\PP2\Datasets\train.csv\train.csv')
+    df = pd.read_csv(r'.\train.csv')
     # print(df.head())
     # datatype info
     # df.info()

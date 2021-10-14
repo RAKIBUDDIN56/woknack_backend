@@ -5,14 +5,14 @@ import moviepy.editor as mp
 # video to audio conversion
 
 def video_to_text(video):
-    clip = mp.VideoFileClip(r"C:\Users\user\Desktop\RP\app\demo\cooking1.mp4") 
-    video.audio.write_audiofile(r"C:\Users\user\Desktop\RP\app\demo\converted.wav", codec='pcm_s16le')
+    # clip = mp.VideoFileClip(r"C:\Users\user\Desktop\RP\app\demo\cooking1.mp4") 
+    video.audio.write_audiofile(r"converted.wav", codec='pcm_s16le')
 
 #  Define recognizer
 
     r = sr.Recognizer()
 
-    audio = sr.AudioFile(r"C:\Users\user\Desktop\RP\app\demo\converted.wav")
+    audio = sr.AudioFile(r"converted.wav")
 
     with audio as source:
         audio_file = r.record(source)

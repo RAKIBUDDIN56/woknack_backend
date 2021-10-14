@@ -9,7 +9,7 @@ def image_to_text(img_eng):
    # image_path_eng = (r"C:\Users\user\Desktop\RP\app\demo\cook.jpg")
    # img_eng = Image.open(image_path_eng)
    #Providing the tesseract executable - location to pytesseract librar
-   pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+   pytesseract.tesseract_cmd = r'.\Tesseract-OCR\tesseract.exe'
    # pytesseract.tesseract_cmd = path_to_tesseract
    custom_config = r'-l tam+sin+eng --psm 6'
    # Passing the image object to image_to_string() function -  This function will extract the text from the image

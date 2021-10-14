@@ -23,7 +23,7 @@ def tailor_video():
             input_txt = re.sub(word, "", input_txt)
         return input_txt
 
-    path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    path_to_tesseract = r'.\Tesseract-OCR\tesseract.exe'
     pytesseract.tesseract_cmd = path_to_tesseract
     video_path = os.path.join('song.mp4')
     times = 0

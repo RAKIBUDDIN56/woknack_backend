@@ -13,7 +13,7 @@ from sklearn.cluster import KMeans
 
 def page_clustering():
     #import data from the given path
-    data = pd.read_csv(r'C:\Users\user\Desktop\RP\PP2\Datasets\pages.csv')
+    data = pd.read_csv(r'.\pages.csv')
 
     # print(data.head())
     Y = data[['Name', 'Category']]
@@ -24,7 +24,7 @@ def page_clustering():
     names = []
     category =[]
     name = []
-    with open(r'C:\Users\user\Desktop\RP\PP2\Datasets\pages.csv') as csvfobj: #csvfobj=object
+    with open(r'.\pages.csv') as csvfobj: #csvfobj=object
         readCSV= csv.reader(csvfobj, delimiter=',') 
         for column in readCSV:
             category = column[2]
