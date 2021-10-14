@@ -21,7 +21,7 @@ app = Flask(__name__)
 @app.route("/")
 def subtitleToText():
     # page_clustering()
-    return "Hi"
+    return "Hi From SERVER"
 
 @app.route("/sss")
 def hello(): 
